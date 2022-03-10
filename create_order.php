@@ -19,6 +19,7 @@ $day  = '';
 $price  = '';
 $errors = [];
 
+
 if (($_SERVER)['REQUEST_METHOD'] === 'POST') {
     $community = filter_input(INPUT_POST, 'community');
     // $order_user = filter_input(INPUT_POST, 'order_user');
