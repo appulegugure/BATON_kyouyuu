@@ -31,16 +31,18 @@ if (($_SERVER)['REQUEST_METHOD'] === 'POST') {
     $child = filter_input(INPUT_POST, 'child');
     $community_id = filter_input(INPUT_POST, 'community_id');
 
+
     if (empty($errors)) {
         //タスク内容の編集
         // create_order($community, $order_user, $title, $job, $day, $price)
         $order_user = 2;
         //create_order();
         // compelte_order.php にリダイレクト
-        header('Location: /complete_order.php');
+        header('Location: complete_order.php');
         //exit;
     }
 }
+
 
 ?>
 
